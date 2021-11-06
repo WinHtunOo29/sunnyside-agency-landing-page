@@ -92,12 +92,13 @@ header #down-arrow img {
 
 .transform-brand, .stand-out {
 	width: 50%;
-	padding-top: 7%;
+	height: 100%;
 }
 
 .flex-text {
 	width: 60%;
-	margin: 0 auto;
+	height: 60%;
+	margin: 20% auto;
 }
 
 .flex-text h2 {
@@ -167,4 +168,12 @@ header #down-arrow img {
 	color: hsl(198, 62%, 26%);
 	font-weight: bold;
 	line-height: 25px;
+}
+
+.client-testimonials h3 {
+	padding-top: 5%;
+	color: hsl(210, 4%, 67%);
+	text-align: center;
+	letter-spacing: 6px;
+	word-spacing: 3px;
 }
