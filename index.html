@@ -13,8 +13,9 @@
 <body>
   <header>
     <nav>
-      <img src="images/logo.svg" alt="Logo">
-      <ul>
+      <img src="images/logo.svg" alt="Sunnyside Logo">
+      <a class="hamburger" href="javascript:void(0);" onclick="mobileMenu()"><img src="images/icon-hamburger.svg"></a>
+      <ul class="menu" id="top-nav">      
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Projects</a></li>
@@ -22,9 +23,9 @@
       </ul>
     </nav>
     <h1>WE ARE CREATIVES</h1>
-    <a href="#" id="down-arrow"><img src="images/icon-arrow-down.svg" alt="scroll down arrow"></a>
+    <a href="#body" id="down-arrow"><img src="images/icon-arrow-down.svg" alt="scroll down arrow"></a>
   </header>
-  <section class="flex-boxes">
+  <section id="body" class="flex-boxes">
     <div class="brand">
       <div class="flex-image">
         <img src="images/desktop/image-transform.jpg" alt="egg with shadow">
@@ -56,12 +57,14 @@
     </div>
     <div class="graphic-photography">
       <div class="graphic">
+        <img src="images/desktop/image-graphic-design.jpg" alt="two apples">
         <div class="graphic-text">
           <h2>Graphic Design</h2>
           <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
         </div>
       </div>
       <div class="photography">
+        <img src="images/desktop/image-photography.jpg" alt="Orange">
         <div class="photography-text">
           <h2>Photography</h2>
           <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
@@ -98,5 +101,34 @@
     <img src="images/desktop/image-gallery-cone.jpg" alt="Cone">
     <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar Cubes">
   </section>
+  <footer>
+    <img class="footer-logo" src="images/logo.svg" alt="Sunnyside Logo">
+    <nav class="footer-nav"> 
+       <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+    <nav class="social-media"> 
+       <ul>
+        <li><a href="#"><img src="images/icon-facebook.svg" alt="facebook icon"></a></li>
+        <li><a href="#"><img src="images/icon-instagram.svg" alt="instagram icon"></a></li>
+        <li><a href="#"><img src="images/icon-twitter.svg" alt="twitter icon"></a></li>
+        <li><a href="#"><img src="images/icon-pinterest.svg" alt="pinterest icon"></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    function mobileMenu() {   
+      var x = document.getElementById("top-nav");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "menu";
+      }
+    }
+  </script>
 </body>
 </html>
