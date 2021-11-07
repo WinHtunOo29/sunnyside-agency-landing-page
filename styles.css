@@ -285,7 +285,7 @@ footer nav ul li {
 }
 
 .social-media a:hover {
-	filter:  brightness(0) invert(1);
+	filter: brightness(0) invert(1);
 }
 
 @media only screen and (max-width: 800px) {
@@ -423,8 +423,8 @@ footer nav ul li {
 		right: 25%;
 	}
 
-	footer {
-		padding: 15% 0 1% 0;
+	.image-gallery img {
+		height: 200px;
 	}
 
 	footer .footer-logo {
@@ -452,7 +452,5 @@ footer nav ul li {
 	.photography-text {
 		right: 13%;
 	}
-
-	
 }
 
