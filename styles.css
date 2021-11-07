@@ -271,6 +271,10 @@ footer nav ul li {
 	font-weight: 900;
 }
 
+.footer-nav ul li a:hover {
+	color: white;
+}
+
 .social-media {
 	width: 15%;
 	margin: 70px auto;
@@ -278,6 +282,10 @@ footer nav ul li {
 
 .social-media img {
 	width: 100%;
+}
+
+.social-media a:hover {
+	filter:  brightness(0) invert(1);
 }
 
 @media only screen and (max-width: 800px) {
